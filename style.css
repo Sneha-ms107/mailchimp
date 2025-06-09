@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
   font-family: "light";
   src: url("font/659baf8b2573503b.woff2");
 }
@@ -47,7 +47,7 @@ body {
   margin-top: 0px;
 }
 
-.first-display-span {
+.first-display span {
   font-size: 14px;
   margin-left: 90px;
   color: #ffff;
@@ -57,6 +57,7 @@ body {
 .first-display p {
   margin: 0px;
   padding: 0px;
+  margin-left: 80px;
   display: inline-flex;
   font-size: 0.8125rem;
   color: #fff;
@@ -66,10 +67,11 @@ body {
   margin-bottom: -10px;
   margin-top: -10px;
   font-family: Regular;
- flex-direction:column;
+  margin-left: -10px;
+  flex-direction: column;
 }
 
-.first-display br{
+.first-display br {
   color: #fff;
   text-align: center;
   background-color: #231e15;
@@ -77,12 +79,12 @@ body {
   font-family: Regular;
 }
 
-.first-line a {
+.first-display a {
   color: #ffff;
   border-bottom: 0.0625rem dashed;
   display: flex;
   text-align: center;
-  margin-left: 30px;
+  margin-left: 20px;
   width: fit-content;
   font-family: Regular;
 }
@@ -104,22 +106,27 @@ body {
 }
 
 .malichimp-margin {
+  list-style:none;
   flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  margin-right: 90px;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 2.71875rem;
+    display: flex;
+
 }
 
 .malichimp-1 {
   flex-flow: row;
-  justify-content: cneter;
-  align-items: center;
-  gap: 0.9375rem;
-  display: flex;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap:15px;
+    row-gap:15px;
+   margin-top:40px;
+   align-items:center;
+   display:flex;
+   flex-wrap:nowrap;
+   line-height:21.6px;
+   container-type: inline-size;
 }
 
 .malichimp-2 {
@@ -133,13 +140,14 @@ body {
   font-weight: 500;
   line-height: 1.1;
   height: 2.875rem;
-  display: inline-block;
-  margin-top: 10px;
+  display: inline-blok;
 }
 
 .malichimp-3 img {
-  height: 50px;
-  width: 140px;
+
+  height:46px;
+  width:auto;
+
 }
 
 .numbers-1 {
@@ -157,6 +165,7 @@ body {
   font-size: 0.8125rem;
   font-family: bold;
   display: inline-block;
+  margin-left: 120px;
 }
 
 .menu {
@@ -1180,7 +1189,7 @@ body {
   font-size: 16px;
   line-height: 21.6px;
   font-weight: 400;
-  margin-top: 70px;
+  margin-top: 64px;
 }
 
 .Buy-now-7 {
@@ -1212,7 +1221,7 @@ body {
   margin-left: 110px;
   padding: 6px;
   margin-top: -30px;
-  margin-right:180px;
+  margin-right: 180px;
 }
 
 .app-1 {
@@ -1237,18 +1246,17 @@ body {
 }
 
 .canva-1 {
-  margin: 0 auto;
-  margin-left: -10px;
+  padding-bottom: 24px;
   display: flex;
   gap: 20px;
 }
 
 .canva-2 {
   padding-bottom: 24px;
-  column-gap: 12px;
   display: inline-flex;
   flex-wrap: wrap;
   row-gap: 12px;
+  column-gap: 12px;
 }
 
 .canva-3 {
@@ -1273,14 +1281,17 @@ body {
 }
 
 .canva-5 {
-  margin-top: -40px;
-  margin-left: 40px;
   color: rgb(35, 30, 21);
   font-family: regular;
   font-size: 16px;
   font-weight: 400;
 }
-
+.canva-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .blue-box-1 {
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -1288,7 +1299,6 @@ body {
   display: flex;
   width: 147.375px;
   height: 172.594px;
-  margin-top: 16px;
 }
 
 .blue-box-2 {
@@ -1304,8 +1314,6 @@ body {
 }
 
 .blue-box-3 {
-  margin-top: -20px;
-  margin-left: 40px;
   color: rgb(35, 30, 21);
   font-family: regular;
   font-size: 16px;
@@ -1321,14 +1329,16 @@ body {
   background-color: #f6f6f4;
   width: 147.375px;
   height: 172.594px;
-  margin-top: -20px;
-  margin-left: 30px;
 }
 
 .instagram-icon-2 {
-  align-items: center;
-  padding: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  column-gap: 12px;
+  justify-content: center;
+  box-sizing: border-box;
   flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .instagram-icon-2 img {
@@ -1346,16 +1356,18 @@ body {
   text-decoration-thickness: 2px;
   text-decoration: underline;
 }
+.instagram-icon p {
+  display: none;
+}
 
 .shopify-1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #f6f6f4;
-  margin-left: 200px;
   width: 147.375px;
   height: 172.594px;
-  margin-top: -170px;
+  margin-left:-10px;
 }
 
 .shopify-2 {
@@ -1377,8 +1389,6 @@ body {
 }
 
 .google-1 {
-  margin-left: 30px;
-  margin-top: 20px;
   list-style: none;
   background-color: #f6f6f4;
   width: 150px;
@@ -1406,10 +1416,6 @@ body {
   flex-direction: column;
   background-color: #f6f6f4;
   width: 150px;
-  margin-top: 30px;
-  height: 150px;
-  margin-left: 200px;
-  margin-top: -150px;
 }
 
 .apps-icon {
@@ -1440,11 +1446,9 @@ body {
   text-align: left;
   flex-direction: column;
   background-color: #f6f6f4;
-  padding: 16px;
-  margin-top: 20px;
-  margin-left: 20px;
+  padding: 12px;
   height: 140px;
-  width: 130px;
+  width: 120px;
 }
 
 .online-text-2 img {
@@ -1480,8 +1484,6 @@ body {
   flex-direction: column;
   background-color: #f6f6f4;
   padding: 16px;
-  margin-top: -170px;
-  margin-left: 200px;
   height: 140px;
   width: 130px;
 }
@@ -1623,7 +1625,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: rgb(231, 183, 95);
-  color: rgb(0, 0, 0);
+  color: #231e15;
 }
 .footer-2 {
   padding-left: 30px;
@@ -1639,8 +1641,8 @@ body {
   font-weight: 400;
   line-height: 24px;
   font-family: regular;
-height: 24px;
-line-height :24px;
+  height: 24px;
+  line-height: 24px;
 }
 
 .digital-text {
@@ -1648,8 +1650,8 @@ line-height :24px;
   font-weight: 400;
   font-family: regular;
   text-decoration-color: rgb(0, 0, 0);
-  margin-left: 40px;
-  list-style:none;
+  list-style: none;
+  margin-top: 20px;
 }
 .marketin-1 {
   margin-bottom: 10px;
@@ -1660,11 +1662,13 @@ line-height :24px;
   text-align: left;
   list-style-image: none;
   text-decoration: underline;
+  color: #231e15;
   text-decoration-color: rgb(0, 0, 0);
 }
 .registration-text {
   margin-bottom: 10px;
   font-size: 13px;
+  color: #231e15;
   font-weight: 400;
   list-style-image: none;
   text-decoration-line: underline;
@@ -1679,6 +1683,7 @@ line-height :24px;
   line-height: 26px;
   text-decoration-line: underline;
   width: 90%;
+  color: #231e15;
 }
 .footer-3 {
   padding-left: 30px;
@@ -1771,7 +1776,7 @@ line-height :24px;
 }
 .text-all-container {
   margin-bottom: 40px;
-  margin-left:-30px;
+  margin-left: -30px;
   line-height: 21.6px;
 }
 .text-1-container {
@@ -1855,7 +1860,7 @@ line-height :24px;
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: 400;
-  margin-left:-30px;
+  margin-left: -30px;
   font-family: regular;
 }
 .company-container-2 {
@@ -1907,7 +1912,7 @@ line-height :24px;
   font-size: 16px;
   font-weight: 400;
   font-family: regular;
-  margin-left: -30px;
+  margin-left:-30px;
 }
 
 .thrid-container-2 {
@@ -2016,6 +2021,10 @@ line-height :24px;
   margin-left: -40px;
   margin-top: 20px;
 }
+.footer-13 {
+  margin-left: 70px;
+  margin-top: -20px;
+}
 
 .footer-14 {
   margin-top: 32px;
@@ -2085,55 +2094,40 @@ line-height :24px;
   margin-right: 10px;
 }
 
-.footer-25{
-  margin-top:32px;
-  margin-left:10px;
+.footer-25 {
+  margin-top: 32px;
+  margin-left: 10px;
   margin-right: 10px;
   display: flex;
-  line-height:21.6px;
-
+  line-height: 21.6px;
 }
 
-
-.footer-26{
+.footer-26 {
   margin-bottom: 12px;
-  color:rgb(0, 0, 0);
-  line-height:21.6px;
-
+  color: rgb(0, 0, 0);
+  line-height: 21.6px;
 }
-.footer-27{
-  
-  border:1px solid rgb(0,0,0);
-position:relative;
-
+.footer-27 {
+  border: 1px solid rgb(0, 0, 0);
+  position: relative;
 }
-.footer-27 a{
-  padding:10px;
-  border-color: rgb(0,0,0);
+.footer-27 a {
+  padding: 10px;
+  border-color: rgb(0, 0, 0);
+}
+.canva-6 {
+  display: none;
+}
+.canva-5 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: regular;
+  padding: 4px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.blue-box p {
+  display: none;
+}
 
 .price-content-1 {
   display: none;
@@ -2149,9 +2143,15 @@ position:relative;
 .login-button {
   display: none;
 }
-
-
-
+.instagram-icon p{
+  display: none;
+}
+.footer-28{
+  font-size:11px;
+  font-weight:400;
+  font-family:regular;
+  margin-top:70px;
+}
 
 @media screen and (min-width: 768px) {
   .first-display {
@@ -2172,7 +2172,20 @@ position:relative;
     width: 90%;
     font-size: 24px;
   }
-
+  .Automation-6 img {
+    width: 304px;
+    margin-top: 0px;
+  }
+  .blue-box p {
+    display: block;
+  }
+  .first-display p {
+    margin-left: 20px;
+  }
+  .canva-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .numbers-1 {
     color: #231e15;
     border: none;
@@ -2213,13 +2226,13 @@ position:relative;
     margin-bottom: 20px;
   }
   .tools-2 {
-    margin-top:-5px;
+    margin-top: 35px;
   }
 
   .segmentation-3 img {
     width: 304px;
     height: 188.39px;
-    margin-top: 60px;
+    margin-top: 55px;
   }
 
   .segmentation-2 {
@@ -2244,17 +2257,23 @@ position:relative;
 
   .optimize-2 {
     font-size: 23.04px;
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+  .optimize-3 img {
+    margin-top: 60px;
+  }
+  .section-7 {
+    margin-top: 0px;
   }
 
   .optimize-3 {
     width: 304px;
     height: 188.38px;
-    margin-top: 60px;
+    margin-top: 10px;
   }
   .optimize-5 {
     max-width: 90%;
-    margin-top: 30px;
+    margin-top: 70px;
     line-height: 28px;
   }
   .optimize-6 {
@@ -2370,7 +2389,7 @@ position:relative;
     margin-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
-  font-size: 13px;
+    font-size: 13px;
   }
 
   .price-content-2 {
@@ -2384,76 +2403,74 @@ position:relative;
     height: 10px;
     background-color: rgb(255, 224, 27);
     border-radius: 50%;
-    padding:5px;
-    margin-right:12px;
+    padding: 5px;
+    margin-right: 12px;
   }
   .advanced-container-1 {
     display: flex;
     color: rgb(0, 0, 0);
-    margin-right:10px;
+    margin-right: 10px;
   }
   .advanced-container-2 {
     width: 10px;
     height: 10px;
     background-color: rgb(255, 224, 27);
     border-radius: 50%;
-    padding:5px;
-    margin-right:12px;
+    padding: 5px;
+    margin-right: 12px;
   }
 
-  .automation-container-2{
+  .automation-container-2 {
     width: 10px;
     height: 10px;
     background-color: rgb(255, 224, 27);
     border-radius: 50%;
-    padding:5px;
-    margin-right:12px;
+    padding: 5px;
+    margin-right: 12px;
   }
 
   .automation-container-1 {
     display: flex;
     color: rgb(0, 0, 0);
-    margin-right:10px;
+    margin-right: 10px;
   }
-.popup-text-1{
-  display:flex;
-  margin-right:10px;
-}
-.popup-text-2{
-  width: 10px;
+  .popup-text-1 {
+    display: flex;
+    margin-right: 10px;
+  }
+  .popup-text-2 {
+    width: 10px;
     height: 10px;
     background-color: rgb(255, 224, 27);
     border-radius: 50%;
-    padding:5px;
-    margin-right:12px;
-}
-.onboarding-1{
-  width: 10px;
+    padding: 5px;
+    margin-right: 12px;
+  }
+  .onboarding-1 {
+    width: 10px;
     height: 10px;
     background-color: rgb(255, 224, 27);
     border-radius: 50%;
-    padding:5px;
-    margin-right:12px;
-}
-
-
+    padding: 5px;
+    margin-right: 12px;
+  }
 
   .template-content-1 {
     display: flex;
-    margin-right:10px;
-    margin-left:-10px;
+    margin-right: 10px;
+    margin-left: -10px;
   }
   .template-content-2 {
     width: 10px;
     height: 10px;
     background-color: rgb(255, 224, 27);
     border-radius: 50%;
-    padding:5px;
-    margin-right:12px;
+    padding: 5px;
+    margin-right: 12px;
   }
 
   .popup-text-1 {
-    margin-right:10px;
+    margin-right: 10px;
     display: flex;
   }
   .popup-text-2 {
@@ -2461,11 +2478,12 @@ position:relative;
     height: 10px;
     background-color: rgb(255, 224, 27);
     border-radius: 50%;
-    padding:5px;
-    margin-right:12px;
+    padding: 5px;
+    margin-right: 12px;
   }
   .sale-text {
     display: block;
+    margin-left:280px;
   }
   .sale-text-1 {
     padding: 8px;
@@ -2499,30 +2517,102 @@ position:relative;
     padding-right: 24px;
   }
 
-.section-27{
-  margin-left:210px;
-  width:50%;
-}
-.section-7{
-  margin-left:0px;
-}
-.section-19{
-  margin-left: 130px;
-}
+  .section-27 {
+    margin-left: 210px;
+    width: 50%;
+  }
+  .section-7 {
+    margin-left: 0px;
+  }
+  .section-19 {
+    margin-left: 130px;
+  }
 
-.section-25{
-  margin-top: -40px;
-  margin-right: -50px;
+  .section-25 {
+    margin-top: -40px;
+    margin-right: -50px;
+  }
+  .money-content-7 {
+    width: 45%;
+  }
+  .canva-6 {
+    display: block;
+  }
+
+  .canva-text {
+    display: block;
+  }
+  .canva-3 {
+    width: 326.39px;
+    height: 177px;
+  }
+  .canva-text h2 {
+    color: rgb(35, 30, 21);
+    font-family: bold;
+  }
+  .canva-text p {
+    width: 100%;
+  }
+  .blue-box-2 img {
+    width: 94px;
+  }
+
+  .blue-box-1 {
+    width: 326.39px;
+    height: 177px;
+  }
+  .canva-4 img {
+    width: 94px;
+  }
+
+  .canva-3 a {
+    display: block;
+    font-size: 16px;
+    line-height: 21.6px;
+    font-family: regular;
+  }
+  .canva-5 {
+    display: inline-flex;
+  }
+
+  .canva-6 {
+    font-family: regular;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(35, 30, 21, 0.65);
+    line-height: 16.25px;
+  }
+
+   .month-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    flex-wrap:nowrap;
+   }
+
+   .Buy-Now-3{
+    padding:16px 100px;
+   }
+
+   .month-text-3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   }
+
+  .money-content-8{
+    font-size:38.4px;
+  }
+  
+  .money-contnet-11{
+    width:280px;
+  }
+  .money-content-4{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
-.money-content-7{
-  width:45%;
-}
-
-
-}
-
-
-
 
 @media screen and (min-width: 576px) {
   .full-screen {
@@ -2530,7 +2620,19 @@ position:relative;
     display: grid;
     margin-top: -80px;
   }
-
+  .community-container-1{
+    margin-left:190px;
+  }
+  .company-container-1{
+    margin-left: 190px;
+  }
+  .thrid-container-1{
+    margin-left: 190px;
+  }
+  .text-all-container{
+    margin-left:190px;
+    margin-top:-510px;
+  }
   .Automation-4 {
     max-width: 70%;
     margin-bottom: 60px;
@@ -2540,7 +2642,11 @@ position:relative;
     margin-left: 80px;
     margin-bottom: 100px;
   }
-
+  .instagram-icon-2 img {
+    width: 96px;
+    height: 96px;
+    margin-left: -80px;
+  }
   .second-display-2 {
     width: 440px;
   }
@@ -2618,18 +2724,14 @@ position:relative;
   .section-4 {
     margin-left: 50px;
   }
-
   .section-6 {
     font-size: 24px;
     font-weight: 400;
     letter-spacing: -0.32px;
     line-height: 31.9999px;
   }
-  .section-7 {
-    margin-left: 70px;
-  }
   .section-19 {
-    margin-left: 145px;
+    margin-left: 115px;
   }
 
   .section-23 {
@@ -2684,62 +2786,127 @@ position:relative;
     padding-right: 210px;
   }
 
-.Buy-now-5 u{
-  text-decoration-color:rgb(0, 0, 0);
-}
-.apps-icon{
-  padding-bottom:40px;
-  display: flex;
+  .Buy-now-5 u {
+    text-decoration-color: rgb(0, 0, 0);
+  }
+  .apps-icon {
+    padding-bottom: 40px;
+    display: flex;
+  }
+  .canva-6 {
+    display: block;
+    font-size: 16px;
+    line-height: 21.6px;
+    font-family: regular;
+  }
+  .canva-5 {
+    display: inline-flex;
+  }
+
+  .canva-6 {
+    font-family: regular;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(35, 30, 21, 0.65);
+    line-height: 16.25px;
+  }
+  .canva-3 {
+    width: 245.22px;
+    height: 253.75px;
+  }
+  .blue-box-1 {
+    width: 245.22px;
+    height: 253.75px;
+  }
+  .instagram-icon-1 {
+    width: 245.22px;
+    height: 253.75px;
+  }
+  .blue-box-2 {
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+  .blue-box-2 img {
+    width: 96px;
+    margin: 0;
+    padding: 0;
+    height: 96px;
+  }
+  .blue-box {
+    justify-content: flex-start;
+  }
+  .instagram-icon p {
+    display: block;
+  }
+
+  .canva-text {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .canva-4 img {
+    width: 96px;
+    margin: 0;
+    padding: 0;
+  }
+  .blue-box p {
+    display: block;
+    font-size: 13px;
+    font-family: regular;
+    font-weight: 400;
+    color: rgba(35, 30, 21, 0.65);
+  }
+  .canva-4 {
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .blue-box-2 img {
+    width: 96px;
+  }
+
+  .instagram-icon p{
+    display: block;
+  }
+  .shopify-2{
+    width:245px;
+  
+  }
+
 
 }
-.canva-3 a{
-  display: block;
-  font-size:16px;
-  line-height:21.6px;
-  font-family:regular;
-}
 
-}
-
-
-@media screen and (min-width:1024px) {
-
-.second-lines-1{
-  font-size:36.864px;
-  letter-spacing:-1px;
-  line-height:36.864px;
-}
-
-.secod-lines-2{
-  font-size:
-}
-.second-display{
-padding-top:148px;
-padding-bottom:80px;
-
-
-}
-.full-screen{
-  display:grid;
-  grid-template-columns:256px 256px 256px 256px;
-  height:635.469px;
-  grid-auto-rows:1fr;
-}
-.Automation-2{
-  align-items :stretch;
-background-color: rgb(215, 150, 55);
-color: rgb(0, 0, 0);
-display :flex;
-flex-direction :column;
-flex-wrap :nowrap;
-}
-.Automation-4{
-  background-color :rgba(0, 0, 0, 0);
-background-image :none;
-max-width: 100%;
-}
-.generative-text-3{
-  max-width: 20px;
-}
-
+@media screen and (min-width: 1024px) {
+  .second-lines-1 {
+    font-size: 36.864px;
+    letter-spacing: -1px;
+    line-height: 36.864px;
+  }
+  .second-display {
+    padding-top: 148px;
+    padding-bottom: 80px;
+  }
+  .full-screen {
+    display: grid;
+    grid-template-columns: 256px 256px 256px 256px;
+    height: 635.469px;
+    grid-auto-rows: 1fr;
+  }
+  .Automation-2 {
+    align-items: stretch;
+    background-color: rgb(215, 150, 55);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .Automation-4 {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    max-width: 100%;
+  }
+  .generative-text-3 {
+    max-width: 20px;
+  }
 }
