@@ -33,7 +33,6 @@
 
 *{
   margin:0;
-  ;
 }
 
 .header-container {
@@ -96,9 +95,11 @@
     column-gap: 30px;
 }
 .pricing-text{
-    padding: 16px;
-    font-size: 13px;
-    font-family: bold;
+   padding: 16px;
+   font-size: 13px;
+   font-family: bold;
+   margin-top: -8px;
+   margin-left: 1px;
 }
 .menu-icon{
    list-style:none;
@@ -130,6 +131,7 @@
   letter-spacing: -1px;
   font-weight: 400;
   line-height: 36px;
+  margin-top: -4px;
 }
 .email-container p {
   font-size: 18px;
@@ -160,8 +162,7 @@
 }
 .frist-session{
   margin-top: 10px;
-}
-
+} 
 .automation-one{
     padding: 24px;
     background-color:rgb(215, 150, 55);
@@ -172,10 +173,12 @@
   display: none;
 }
 .automation-three{
-  font-size:18px;
+  font-size: 16.875px;
   font-family: medium;
   font-weight: 400;
   color: rgb(35,30,21);
+  height: 21.5px;
+  line-height: 22.4999px;
 }
 .automation-two img{
   width: 100%;
@@ -235,7 +238,7 @@ font-family: regular;
 .generative-text-two{
   border:1px solid black;
   border-radius: 26px;
-  padding:12px 24px;
+  padding:10px 24px;
   font-family:bold;
   font-size:13px;
 }
@@ -510,10 +513,10 @@ font-family: regular;
 }
 .offer-container-b a{
   display: none;
-}
+} 
 .list-items-a{
   display: none;
-}
+} 
 .standerd-container-a{
   display: flex;
   flex-direction: column;
@@ -732,41 +735,95 @@ width: 16px;
   font-family:medium;
   font-size:28.125px;
   font-weight:400;
+  width: 120%;
 }
-.first-container-a{
-  margin-top: 24px;
+.full-contents{
+  margin-left:28.125px;
+  margin-right:28.125px;
+  margin-top:24px;
 }
-.first-container-b{
-  padding-bottom: 24px;
-  display: inline-flex;
-  gap: 12px;
-  column-gap: 12px;
+.full-contents-a{
+  column-gap:12px;
+  display:inline-flex;
   row-gap: 12px;
-  list-style:none;
+  padding: 0px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 24px;
 }
-.first-container-c{
-  width: 175.5px;
+.full-contents-b{
+  display:flex;
+  justify-content:center;
+  text-align:left;
+  background-color: rgb(246,246,244);
 }
-.first-container-d{
-  flex-direction: column;
-  justify-content: center;
+.canva-text{
+  padding: 36px;
   align-items: center;
   display: flex;
-  background-color:rgb(246, 246, 244);
-  padding: 40px
+  flex-direction: column;
+  row-gap: 12px;
+  justify-content:center;
+  text-align: left;
+  background-color: rgb(246, 246, 244);
 }
-.first-container-d img{
- width: 64px;
+.canva-text img{
+  width: 64px;
 }
-.text{
-  padding-top: 12px;
-  line-height: 24px;
-  font-size: 10px;
-  font-family: regular;
+.canva-text-a{
+  text-align: center;
+  width: 120%;
 }
-.spend-container{
-  display: none;
+.canva-text-a h2{
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  font-family: Regular;
 }
+.view-content-a{
+  padding-right: 40px;
+  display:flex;
+  gap: 10px;
+}
+.view-content h2{
+  font-size: 16px;
+  font-weight: 400;
+  font-family:Regular;
+}
+.view-content img{
+  border-radius: 36px;
+  background-color:rgb(255, 224, 27);
+  gap: 10;
+  padding: 5px;
+  margin-top:-4px;
+}
+.million-content{
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color:rgb(0, 0, 0);
+  color: #ffff;
+}
+.million-content-a{
+  margin-left: 28.125px;
+  margin-right: 28.125px;
+  align-items: center;
+}
+.million-content-a h2{
+  letter-spacing:-0.5px;
+  line-height:28.125px ;
+  font-size:28.125px;
+  font-family: medium;
+  text-align:center ;
+}
+
+
+
+
+
+
+
 
 
 
@@ -784,7 +841,7 @@ width: 16px;
     display: none;
   }
 }
-@media screen and (min-width:577px){
+@media screen and (min-width:576px){
   .email-container p{
     font-size:24px;
     width: 95%;
@@ -794,6 +851,7 @@ width: 16px;
   .frist-session{
     grid-template-columns: repeat(2, 50%);
     display: grid;
+    margin-top: 90px;
   }
   .automation-two img{
     width: 208.5px;
@@ -837,6 +895,9 @@ width: 16px;
   .login-container a{
     display: none;
   }
+  .growth-container-a h2{
+     width: 100%;
+  }
 }
 @media screen and (min-width: 752px) {
    .sale-text{
@@ -872,6 +933,19 @@ width: 16px;
   }
 }
 @media screen and (min-width: 768px){
+    .header-container p{
+      font-size: 13px;
+    }
+    .mailchimp-image img{
+      width: 100%;
+    }
+    .header-container{
+      padding: 12px 12px;
+      margin-left:0px;
+    }
+    .frist-session{
+      margin-top: 86px;
+    }
     .sale-text{
       display: none;
     }
@@ -884,16 +958,26 @@ width: 16px;
     }
     .sale-container{
       margin-top: 23px;
-      margin-right: -10px; 
+      margin-right:-12px;
     }
     .pricing-container{
       margin-left:-70px;
       margin-right:34px;
     }
+    .pricing-text{
+      padding: 16px;
+    font-size: 13px;
+    font-family: bold;
+    margin-top: -14px;
+    margin-right: -24px;
+    }
+    .automation-two img{
+      margin-top: 55px;
+      width: 100%;
+    }
     .one{
       padding-top: 88px;
-      padding-bottom: 80px;
-
+      padding-bottom: 36px;
     }
     .email-container{
     font-size: 24px;
@@ -974,7 +1058,13 @@ width: 16px;
     font-size:23px;
   }
   .generative-one h2{
-    font-size: 23px;
+    font-size: 23.04px
+  }
+  .generative-container{
+    background-color:rgb(245, 245, 245);
+  }
+  .generative-two img{
+    width: 100%;
   }
   .email-container p {
     letter-spacing: -0.32px;
@@ -990,8 +1080,9 @@ width: 16px;
   }
   .login-container{
     border-radius: 26px;
-    padding: 12px 24px;
+    padding: 14px 24px;
     border: 1px solid black;
+    margin-top: -16px;
   }
   .login-button{
     display: none;
@@ -1103,22 +1194,49 @@ width: 16px;
     margin-left: 4px;
     margin-bottom:-9px
   }
+  .generative-text-two{
+    margin-top: -15px;
   }
+  .segmentation-one img{
+    margin-top: 50px;
+  }
+  .growth-container-a h2{
+    font-size: 38.4px;
+    width: 80%;
+  }
+}
 
 
 
 
 @media screen and (min-width:992px){
+  .one{
+    padding-top: 90px;
+    padding-bottom: 132px;
+  }
   .frist-session{
     grid-template-columns: repeat(4, 25%);
     grid-auto-rows: 1fr;
+  }
+  .email-container h1{
+    font-size: 35.712px;
+  }
+  .email-container p{
+    width: 62%;
+    margin-left: 180px;
   }
   .automation{
     display: block;
   }
    .automation-three {
     transform: translatey(-355px);
+    margin-top:-5px;
+    line-height: 31.104px;
   } 
+  .automation-text{
+    transform: translatey(-60px);
+    margin-bottom: -60px;
+  }
    .automation img{
     width: 100%;
   }
@@ -1157,6 +1275,11 @@ width: 16px;
   .generative img{
     display: block;
   }
+  .generative-two{
+    margin-top: -6px;
+    line-height: 31.104px;
+  }
+
   .automation-one{
     margin-top: -10px;
     padding: 16px;
@@ -1195,8 +1318,69 @@ width: 16px;
     transform: translateY(-350px);
     margin-left: -28px;
   }
+  .generative-text p{
+    margin-top: -80px;
+    width: 126%;
+    margin-left: -26px;
   }
+  .automation-two h1{
+    font-size: 22.32px;
+  }
+  .automation-text-two{
+    text-align: center;
+  }
+  .generative-one h2{
+    font-size: 22.32px;
+  }
+  .segmentation-one h2{
+    font-size: 22.32px;
+  }
+  .reporting-one h2{
+    font-size: 22.32px;
+  }
+  .generative-text-two{
+    margin-top: 18px;
+  }
+  .segmentation-text p{
+    margin-left: -28px;
+    width: 120%;
+  }
+  .reporting-text {
+    margin-top: -60px;
+  }
+  .second-display-one{
+    margin-left: 49.594px;
+    margin-right: 49.594px;
+  }
+  .second-display-two{
+    column-gap:8.33333%;
+    display:grid;
+    flex-direction:column; 
+    grid-template-columns:254.922px 446.125px;
+  }
+  .find-a h2{
+    font-size: 29.76px;
+    width: 110%;
+  }
+  .find-a p{
+    width: 110%;
+    line-height: 31.9999px;;
+  }
+   .experience-container-a h3{
+    width: 50%;
+  }
+  .experience-container-a p{
+    width: 80%;
+  }
+  .billion-container h5{
+    width: 80%;
+  } 
+  .offer-container-a {
+    margin-right: 49.604px;
+    margin-left: 49.594px;
+  } 
   
+}
 
 
 
@@ -1229,6 +1413,15 @@ width: 16px;
   }
 }
 @media screen and (min-width:1024px){
+  .header-container p{
+    font-size: 13px;
+  }
+  .sale-container{
+    margin-right: -276px;
+  }
+  .one{
+    padding-bottom: 22px;
+  }
   .second-display-one{
     margin-right: 51.203px;
     margin-left: 51.203px;
@@ -1257,6 +1450,25 @@ width: 16px;
     margin-top: -2px;
     grid-template-columns:198.391px 198.391px;
   }
+  .automation-three{
+    margin-top: -18px;
+    font-size: 23.04px;
+  }
+  .generative-two{
+    margin-top: -22px;
+    font-size: 23.04px;
+  }
+  .segmentation-two{
+    margin-top: -16px;
+    font-size: 23.04px;
+    line-height: 30px;
+  }
+  .reporting-two{
+    margin-top: -16px;
+    font-size: 23.04px;
+    line-height: 32px;
+    margin-left: -24px;
+  }
   .experience-container-a h3{
     width: 70%;
     line-height: 31.9999px;
@@ -1277,6 +1489,26 @@ width: 16px;
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .email-container h1{
+    font-size:36.864px;
+  }
+  .register-image{
+    height: auto;
+    width: 72%;
+  }
+  .marketing-container-b{
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1px;
+  }
+  .product-container{
+    background-color:rgb(255, 255, 255);
+  }
+  .automation-text{
+    width: 100px;
+  }
+  
 }
 
 
